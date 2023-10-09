@@ -1,5 +1,6 @@
-import java.util.Random;
+package lotr;
 
+import java.util.Random;
 
 public class King extends Noble {
     public King() {

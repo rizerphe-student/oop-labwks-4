@@ -1,3 +1,5 @@
+package lotr;
+
 public class Elf extends Character {
     public Elf() {
         super(10, 10);
@@ -5,10 +7,10 @@ public class Elf extends Character {
 
     @Override
     public void kick(Character c) {
-        if (c.power < this.power) {
-            c.hp = 0;
+        if (c.getPower() < this.getPower()) {
+            c.setHp(0);
         } else {
-            c.power -= 1;
+            c.setPower(c.getPower() - 1);
         }
     }
 }

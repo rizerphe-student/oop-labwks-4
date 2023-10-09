@@ -1,3 +1,5 @@
+package lotr;
+
 import java.util.Random;
 
 abstract class Noble extends Character {
@@ -6,6 +8,6 @@ abstract class Noble extends Character {
     }
 
     public void kick(Character c) {
-        c.hp -= new Random().nextInt(this.power);
+        c.setHp(c.getHp() - new Random().nextInt(this.getPower()));
     }
 }
